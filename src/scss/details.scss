@@ -1,0 +1,219 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+
+
+.brand-logo {
+  height: 1.5rem;
+  background-repeat: $no-repeat;
+  background-position: $center $center;
+  background-size: contain;
+}
+.details-top {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: $font-14;
+    .top-box {
+      display: $block;
+      width: 50%;
+      float: $left;
+      height: 1.2rem;
+      position: $relative;
+    }
+    .details-places {
+      text-align: $right;
+      span {
+        margin-right: 0.43rem;
+        color: #b49664;
+      }
+    }
+    .details-brand {
+      i {
+        display: $block;
+        float: $left;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-image: url("../img/slice/icon-details.png");
+        background-repeat: $no-repeat;
+        background-position: $center $center;
+        background-size: contain;
+        margin: 0.27rem 0.125rem $Zero  0.54rem;
+      }
+    }
+    .details-brand:before {
+      content: "";
+      display: $inline-block;
+      width: 2px;
+      height: 0.5rem;
+      position: $absolute;
+      left: $Zero;
+      top: .34rem;
+      background: #000000;
+    }
+}
+.details-content {
+  padding: 0.2rem;
+  font-size: $font-14;
+    div {
+      line-height: 0.8rem;
+      span {
+        display: $block;
+        width: 70px;
+        float: $left;
+        color: #b28f67;
+        .wit {
+        color: $white !important;
+      }
+      }
+      p {
+        margin-left: 70px;
+      }
+    }
+}
+.card{
+  padding: 0.5rem $Zero 0.4rem;
+  .view-box {
+    display: $block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: $border #e8e7e5;
+    margin: $Zero $auto;
+    padding: 5px;
+    opacity: $Zero;
+    animation: bounceIn 1s infinite;
+    -webkit-animation: bounceIn 1s infinite;
+    .view-content {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ab926a;
+      color: $white;
+      margin: 5px $auto;
+      p {
+        width: 25px;
+        margin: $Zero $auto;
+        padding: 8px;
+      }
+    }
+  }
+}
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: $Zero;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: $Zero;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.card-reveal {
+  padding: 0.2rem;
+  font-size: 14px;
+  .card-title{
+    i {
+      display: $block;
+      width: 2px;
+      height: 15px;
+      float: $left;
+      background-color: #000000;
+      margin: 0.1rem 0.3rem $Zero $Zero;
+    }
+  }
+  .card-content {
+    padding: 0 0.45rem;
+    p {
+      line-height: 25px;
+    }
+    img {
+      max-width: $hundred;
+      margin-top: 0.2rem;
+    }
+    .detail-img {
+      height: 3rem;
+      width: 3rem;
+      display: $inline-block;
+      background-size: contain;
+      margin: $Zero $Zero $Zero 12%;
+    }
+  }
+}
+
+
+
+
+
+
+
+

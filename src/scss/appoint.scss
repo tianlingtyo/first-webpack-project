@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+
+
+.subscribe-title {
+	margin-top: 0.5rem;
+	font-size: $font-14;
+	font-weight: bold;
+	color: #000000;
+	li {
+		padding: $Zero 0.3rem;
+		border-bottom: $border #dadada;
+		height: 1.22rem;
+		line-height: 1.22rem;
+		span {
+			float: $left;
+			display: $block;
+			width: 60px;
+			margin-right: 0.5rem;
+		}
+		input {
+			width: 74.5%;
+			line-height: 1.22rem;
+			border: $Zero;
+			font-size: $font-14;
+		}
+		.subscribe-time{
+			position: $relative;
+			p{
+				color: #cdcdcd;
+			}
+		}
+		.subscribe-time:after{
+				content: " ";
+				display: $inline-block;
+				-webkit-transform: rotate(135deg);
+				transform: rotate(135deg);
+				height: 6px;
+				width: 6px;
+				border-width: 2px 2px $Zero $Zero;
+				border-color: #767676;
+				border-style: solid;
+				position: $absolute;
+				top: 46%;
+				right: 15px;
+				margin-top: -3px;
+			} 
+	}
+}
+.time-Box {
+	height: 135px;
+	background-color: #eeeeee;
+	margin-top: 0.3rem;
+	position: $relative;
+	.time-years {
+		position: $absolute;
+		left: 10px;
+		top: 8px;
+		line-height: 30px;
+		width: 50%;
+		z-index: 10;
+		border-right: $border #ADAAAA;
+		label {
+			width: 48%;
+			text-align: $center;
+			display: $inline-block;
+			color: #696969;
+		}
+		.yearsActive {
+			color: #a3946b !important;
+			font-size: $font-14;
+		}
+	}
+	ul {
+		position: $relative;
+		width: $hundred;
+		height: $hundred;
+		overflow-y: scroll;
+		background: #eeeeee;
+		li {
+			position: $relative;
+			width: 50%;
+			float: $left;
+			.time-hours {
+				width: 80%;
+				margin: $Zero  $auto;
+				label {
+					width: 47%;
+					font-size: 14px;
+					text-align: $center;
+					display: $inline-block;
+					padding-bottom: 8px;
+					padding-top: 5px;
+					color: #696969;
+				}
+				.hoursActive {
+					color: #a3946b !important;
+					font-size:$font-16 !important;
+				}
+			}
+		}
+	}
+}
+.order-text{
+	margin-top: 0.5rem;
+	padding: $Zero 0.3rem;
+	textarea{
+		width: 100%;
+		height:1.9rem;
+		border: $border #cccccc;
+		border-radius:5px;
+		padding:0.2rem;
+		box-sizing: border-box;
+		resize:none;
+	}
+}
+.order-btn{
+	display: $block;
+	width: 80%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin: 0.3rem $auto;
+	text-align: $center;
+	font-size: $font-16;
+	color: $white;
+	background-color: #ab926a;
+	border-radius:5px;
+	font-weight: bold; 
+}
+
+

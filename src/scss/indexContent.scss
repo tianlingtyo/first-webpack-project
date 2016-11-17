@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+.activity-Ul{
+	li {
+		margin-top: 5px;
+		position: $relative;
+		display: $block;
+		height:$auto;
+		overflow: $hidden;
+		img {
+			display: $block;
+		}
+		.iconEnd {
+			display: $block;
+			width: 1.75rem;
+			height: 1.75rem;
+			background-image: url("../img/slice/icon-end.png");
+			background-repeat: $no-repeat;
+			background-position: $center $center;
+			background-size: $cover;
+			position: $absolute;
+			top: $Zero;
+			right: $Zero;
+		}
+		.activity-title {
+			position: $absolute;
+			top: $Zero;
+			left:$Zero;
+			right: $Zero;
+			padding: 5px 10px 1px;
+			white-space: nowrap;
+			overflow: $hidden;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			color: $white;
+			font-size: $font-14;
+		}
+		.activity-bottom {
+			position: $absolute;
+			bottom:$Zero;
+			left: $Zero;
+			padding: 5px 10px 1px;
+			height: 45px;
+			width: $hundred;
+			box-sizing: border-box;
+			overflow: $hidden;
+			background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba($Zero,$Zero,$Zero,.7)));
+			h5 {
+				white-space: nowrap;
+				overflow: $hidden;
+				-ms-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+				color:$white;
+				font-size: $font-14;
+			}
+			p {
+				position: $relative;
+				font-size: 10px;
+				color: $white;
+				strong {
+					font-weight: inherit;
+				}
+				span {
+					position: $absolute;
+					right: $Zero;
+				}
+
+			}
+		}
+
+	}
+}

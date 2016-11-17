@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+
+@import 'variables';
+@import 'reset';
+
+
+.padding-one{
+	padding-bottom: 1.5rem;
+}
+.footer-one{
+	position: $fixed;
+	bottom: $Zero;
+	left: $Zero;
+	width:$hundred;
+	height:1.5rem;
+	background-color:$white;
+	border-top: $border #626260;
+	overflow:$hidden; 
+	white-space: nowrap;
+	z-index: 5;
+	
+	a {
+		height: 1.5rem;
+		color: #b1b1b1;
+		i {
+			display: $block;
+			width: 0.8rem;
+			height: 0.8rem;
+			margin: $auto;
+			background-size: $cover;
+			-webkit-background-size: $cover;
+			margin-top: 0.1rem;
+		}
+	}
+}
+.icon-home{background-image:url(./../img/slice/icon-home.png)}
+.icon-enjoy{background-image:url(./../img/slice/icon-enjoy.png)}
+.icon-brand{background-image:url(./../img/slice/icon-brand.png)}
+.icon-user{background-image:url(./../img/slice/icon-user.png)}
+.active {
+	.icon-home{
+		background-image:url(.././img/slice/icon-home-on.png)
+	}
+	.icon-enjoy{
+		background-image:url(./../img/slice/icon-enjoy-on.png)
+	}
+	.icon-brand{
+		background-image:url(./../img/slice/icon-brand-on.png)
+	}
+	.icon-user{
+		background-image:url(./../img/slice/icon-user-on.png)
+	}
+}

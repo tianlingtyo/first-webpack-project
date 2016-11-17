@@ -1,0 +1,142 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,address,em,img,ol,ul,li,fieldset,form,label,legend,table,tbody,tfoot,thead,tr,th,td,i,b,s {
+	margin: $Zero;
+	padding: $Zero;
+	border: $Zero;
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+ul,ol {
+	list-style: none
+}
+
+a img {
+	border: none;
+	vertical-align: top
+}
+
+a {
+	text-decoration: none
+}
+
+button {
+	overflow: visible;
+	padding: $Zero;
+	margin: $Zero;
+	border: $Zero none;
+	background-color: transparent
+}
+
+button::-moz-focus-inner {
+	padding: $Zero
+}
+
+textarea,input,select {
+	background: none;
+	padding: $Zero;
+	-webkit-border-radius: $Zero;
+	-moz-border-radius: $Zero;
+	border-radius: $Zero;
+	-webkit-appearance: none
+}
+
+input[type=password] {
+	-webkit-text-security: disc
+}
+
+textarea:focus,input:focus,button:focus {
+	outline: none
+}
+
+input[type=checkbox].icheck,input[type=radio] {
+	display: none;
+}
+
+body {
+	word-wrap: break-word;
+	font-size: 12px;
+	color: #4c4c4c;
+	line-height: 1.5;
+	font-family: $font-family;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba($Zero,$Zero,$Zero,$Zero)
+}
+
+.clearfix:after {
+	content: ".";
+	display: $block;
+	height: $Zero;
+	visibility: $hidden;
+	clear: both
+}
+
+.pull-left {
+	float: $left;
+}
+
+.pull-right {
+	float: $right;
+}
+.pull-img{
+	width: $hundred;
+}
+/*****使用REM作为尺寸单位，媒体查询不同分辨率的浏览器设置相应根字号*****/
+html {
+	font-size: 32px;
+	-webkit-user-select: none;
+	user-select: none
+}
+
+@media only screen and (min-width:320px) {
+	html {
+		font-size: 32px!important
+	}
+}
+
+@media only screen and (min-width:360px) {
+	html {
+		font-size: 36px!important
+	}
+}
+
+@media only screen and (min-width:375px) {
+	html {
+		font-size: 38px!important
+	}
+}
+
+@media only screen and (min-width:414px) {
+	html {
+		font-size: 41px!important
+	}
+}
+/*****弹性盒子*****/
+.flex-wrap {
+	display: box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width: $hundred;
+}
+
+.flex-item-1 {
+	display: $block;
+	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	text-align: $center;
+}
+.active {
+	span{
+		color:#c99e59!important;
+	}
+}
+.padding-top {
+    padding-top: 1.4rem;
+}

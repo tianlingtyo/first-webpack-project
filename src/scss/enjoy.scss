@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+
+.header {
+	position: $fixed;
+	top: $Zero;
+	left: $Zero;
+	width: $hundred;
+	height: 1.3125rem;
+	border-top: $border #cccccc;
+	border-bottom: $border #cccccc;
+	background-color: $white;
+	z-index: 10;
+	.enjoy-color {
+		color: #000000 !important;
+		height: 1.3125rem;
+		text-align: $center;
+		line-height: 1.3125rem;
+		font-size: $font-14;
+		span {
+			position: $relative;
+			display: $inline-block;
+			width: 1.66rem;
+		}
+	}
+	.enjoy-color:active {
+		background-color: rgba($Zero,$Zero,$Zero,0.1)
+	}
+	.enjoy-active{
+		span {
+			color: #c99e59!important;
+		}
+		span:before {
+			content: "";
+			display: $inline-block;
+			width: $hundred;
+			height: 0.125rem;
+			position: $absolute;
+			left: $Zero;
+			bottom: -3px;
+			background-color: #ab926a;
+		}
+	}
+}
+.activity-Ul{
+	.img-box {
+		display: $block;
+		height: 5rem;
+		background-position: $center $center;
+		background-repeat: $no-repeat;
+		background-size: $cover;
+		position: $relative;
+		overflow: $hidden;
+	}
+}
+.enjoy-Box {
+	height: 1.3125rem;
+	line-height: 1.3125rem;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+
+.enjoy-Box div {
+	position: $relative;
+}
+
+.enjoy-Box div+div:before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 0.8rem;
+	position: absolute;
+	left: 0;
+	top: 0.25rem;
+	background: #cbcbcb;
+}
+
+

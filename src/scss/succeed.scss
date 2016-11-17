@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+.pay-success {
+    background-image: url(../img/i-success.png);
+    height: 3rem;
+    background-size: contain;
+    background-repeat: $no-repeat;
+    background-position: 50%;
+    margin-top: 1.5rem;
+}
+.success-p1 {
+	text-align: $center;
+	margin: .5rem 0;
+	font-size: 16px;
+	i {
+		display: $inline-block;
+		width: 0.6rem;
+		height: 0.6rem;
+		background-image: url("../img/slice/icon-succeed.png");
+		background-repeat: $no-repeat;
+		background-position: $center $center;
+		background-size: $cover;
+		vertical-align: middle;
+		margin-right: 0.125rem;
+	}
+}
+.success-p2 {
+	text-align: $center;
+	margin-bottom: .2rem;
+	font-size: $font-14;
+	.text-darky {
+		color: $yellow
+	}
+}
+
+

@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+@import 'variables';
+
+
+
+.padding-two{
+	padding-bottom: 1.1875rem !important;
+}
+.footer-two{
+	position: $fixed;
+	bottom:$Zero;
+	left: $Zero;
+	width: $hundred;
+	height: 1.1875rem;
+	line-height: 1.1875rem;
+	border-top: $border #626260;
+	z-index: 5;
+	background-color: $white;
+	a{
+		color: #b1b1b1;
+    	font-size: $font-14;
+		.footer-box{
+			width: 85px;
+			margin: $Zero $auto;
+			i{
+				display:$inline-block;
+				width: 0.5rem;
+				height: 0.5rem;
+				vertical-align: top;
+				margin-top:0.34375rem; 
+				background-repeat: $no-repeat;
+				background-position: $center $center;
+				background-size: $cover;
+			}
+			.icon-collection{
+				background-image: url('../img/slice/icon-collection.png');
+			}
+			.icon-collection-on{
+				background-image: url('../img/slice/icon-collection-on.png') !important;
+			}
+			.icon-phone{
+				background-image: url('../img/slice/icon-phone.png');
+			}
+		}
+	}
+	.details-order{
+		background-color: #ac926b;
+    	color: $white !important;
+	}
+	
+}
