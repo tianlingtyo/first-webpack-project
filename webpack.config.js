@@ -1,7 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); //单独解析并打包css样式
-var HtmlWebpackPlugin = require('html-webpack-plugin'); //生成html
 
 
 module.exports = {
@@ -9,8 +8,8 @@ module.exports = {
   entry: './src/main.js',
   /*输出文件地址*/
   output: {
-    path: __dirname + "/dist",
-    publicPath: './',
+    path: __dirname + "./dist",
+    publicPath: '/dist/',
     filename: "[name].js"
   },
   /*解析文件后缀名*/
@@ -51,9 +50,6 @@ module.exports = {
     }),
     /*生成css文件*/
     new ExtractTextPlugin('[name].css'),
-    new HtmlWebpackPlugin({
-      template :'index.html'
-   })
   ],
    /*引入第三方插件*/
   externals: {
